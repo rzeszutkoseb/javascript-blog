@@ -25,7 +25,7 @@ function titleClickHandler(event){
 
   /* get 'href' attribute from the clicked link */
 
-    const articleSelector = clickedElement.getAttribute('href'); // np. "#article-2"
+    const articleSelector = clickedElement.getAttribute('href'); 
 
 
   /* find the correct article using the selector (value of 'href' attribute) */
@@ -38,6 +38,31 @@ function titleClickHandler(event){
     if (targetArticle) targetArticle.classList.add('active');
 
 }
+
+const optArticleSelector = '.post',
+    optTitleSelector = '.post-title',
+    optTitleListSelector = '.titles';
+
+function generateTitleLinks(){
+
+  /* remove contents of titleList */
+
+  /* for each article */
+
+    /* get the article id */
+
+    /* find the title element */
+
+    /* get the title from the title element */
+
+    /* create HTML of the link */
+
+    /* insert link into titleList */
+
+}
+
+generateTitleLinks();
+
 
 const links = document.querySelectorAll('.titles a');
 
