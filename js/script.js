@@ -6,8 +6,7 @@ const templates = {
   authorLink: Handlebars.compile(document.querySelector('#template-author-link').innerHTML),
   tagCloudLink: Handlebars.compile(document.querySelector('#template-tag-cloud-link').innerHTML),
   authorListLink: Handlebars.compile(document.querySelector('#template-author-list-link').innerHTML),
-}
-
+};
 function titleClickHandler(event){
   console.log('titleClickHandler event:', event);
   console.log('event.target =', event.target);               
@@ -252,13 +251,12 @@ function generateAuthors(){
   const allAuthorsData = { authors: [] };
 
   for (const author in allAuthors){
-  allAuthorsData.authors.push({
-    author: author,
-    count: allAuthors[author],
-  });
-}
-
-authorsList.innerHTML = templates.authorListLink(allAuthorsData);
+    allAuthorsData.authors.push({
+      author: author,
+      count: allAuthors[author],
+    });
+  }
+  authorsList.innerHTML = templates.authorListLink(allAuthorsData);
 }
 
 function authorClickHandler(event){
