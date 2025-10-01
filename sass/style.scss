@@ -119,6 +119,19 @@ body {
   }
 }
 
+.tags {
+  li {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+  }
+}
+
+.tags a.tag-size-1 { font-size: 13px; } 
+.tags a.tag-size-2 { font-size: 16px;   } 
+.tags a.tag-size-3 { font-size: 18px; } 
+.tags a.tag-size-4 { font-size: 20px; } 
+.tags a.tag-size-5 { font-size: 24px;   font-weight: 600; } 
+
  .container-footer {
     text-align: center;
     font-weight: bold;
